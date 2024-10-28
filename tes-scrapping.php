@@ -10,7 +10,7 @@ $html = file_get_html($url);
 // Memperoleh konten dari halaman web
 if ($html) {
     // Memperoleh judul artikel
-    $articleTitle = $html->find('h3.post-title', 0)->plaintext;
+    $articleTitle = $html->find('h3.item-title', 0)->plaintext;
 
     // Memperoleh konten artikel
     $articleContent = $html->find('div.post-body.entry-content', 0)->innertext;
